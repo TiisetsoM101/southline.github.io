@@ -230,6 +230,7 @@ section {
 
 .home {
     padding: 0;
+    overflow-x: hidden !important;
 
     .hidden {
         display: none;
@@ -827,6 +828,10 @@ section {
 
     section {
         padding: 3rem 2rem;
+    }
+
+    .home {
+        overflow-x: hidden !mportant;
     }
 
     .home .box {
