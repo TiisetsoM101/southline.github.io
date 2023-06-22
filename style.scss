@@ -36,7 +36,7 @@ $box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 html{
     background: $light-yellow;
     font-size: 62.5%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
 
@@ -813,6 +813,9 @@ section {
 /*    {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{    Media Qeury    }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}    */
 
 @media (max-width: 1200px) {
+    html {
+        overflow-x: hidden !important;
+    }
 
     body {
         overflow-x: hidden !important;
