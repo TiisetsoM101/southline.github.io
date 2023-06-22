@@ -240,7 +240,10 @@ section {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #fff;
+        background: rgba(255,255,255,0.8);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
+        border: 1px solid rgba(255,255,255,0.375);
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -254,6 +257,8 @@ section {
             label {
                 display: block;
                 margin-bottom: 5px;
+                font-size: 2rem;
+                color: $black;
             }
             
             input[type="text"],
@@ -262,6 +267,10 @@ section {
                 width: 100%;
                 padding: 5px;
                 margin-bottom: 10px;
+                background: rgba(255,255,255,0.15);
+                -webkit-backdrop-filter: blur(1px);
+                backdrop-filter: blur(1px);
+                border: 1px solid rgba(255,255,255,0.375);
             }
             
             button[type="submit"],
@@ -804,6 +813,10 @@ section {
 /*    {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{    Media Qeury    }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}    */
 
 @media (max-width: 1200px) {
+
+    body {
+        overflow-x: hidden !important;
+    }
 
     .header {
         padding: 2rem;
